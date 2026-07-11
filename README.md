@@ -58,16 +58,17 @@ Run the container
 ```bash
 docker run -p 8080:8080 system-microservice
 ```
-
 ## CI/CD Pipeline
 
-Every approved pull request to the `main` branch triggers:
+Every approved pull request triggers:
 
-1. Code validation
-2. Unit tests
-3. Docker image build
-4. Image push to registry
-5. Production deployment
+- Code validation
+- Unit tests
+- Docker image build
+- Push image to the container registry
+- Deployment to the production-v3 environment
+
+
 
 ## Maintainers
 
